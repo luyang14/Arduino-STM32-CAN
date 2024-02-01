@@ -266,7 +266,7 @@ bool CANInit(BITRATE bitrate, int remap)
                                      //   MODE=00(Input mode)
                                      //   CNF=00(Analog mode)
 
-    GPIOA->CRH   |= 0xB8FFFUL;       // Configure PA12(0b1011) and PA11(0b1000)
+    GPIOA->CRH   |= 0xB8000UL;       // Configure PA12(0b1011) and PA11(0b1000)
                                      // 0b1011
                                      //   MODE=11(Output mode, max speed 50 MHz) 
                                      //   CNF=10(Alternate function output Push-pull
